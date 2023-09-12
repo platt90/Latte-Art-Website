@@ -1,0 +1,282 @@
+/* UTILITIES */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: cursive;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+.bgimghome {
+    background-position: center;
+    background-size: cover;
+    background-image: url("images/latte\ art\ banner.jpg");
+    min-height: 70%;
+}
+
+.bgimgabout {
+    background-position: center;
+    background-size: cover;
+    background-image: url("images/about\ us\ banner.jpg");
+    min-height: 70%;
+}
+
+.bgimgcontact {
+    background-position: center;
+    background-size: cover;
+    background-image: url("images/contact\ us\ banner.jpg");
+    min-height: 70%;
+}
+
+.bgimgheart {
+    background-position: center;
+    background-size: cover;
+    background-image: url("images/latte\ art\ heart.jpg");
+    min-height: 70%;
+}
+
+.bgimgtulip {
+    background-position: center;
+    background-size: cover;
+    background-image: url("images/latte\ art\ tulip.jpg");
+    min-height: 70%;
+}
+
+.bgimgswan {
+    background-position: center;
+    background-size: cover;
+    background-image: url("images/latte\ art\ swan.jpg");
+    min-height: 70%;
+}
+
+/* NAVBAR STYLING STARTS */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: #1e272d;
+    color: #DEA057;
+}
+
+.nav-links a {
+    color: #DEA057;
+}
+
+/* LOGO */
+.logo {
+    font-size: 32px;
+}
+
+/* NAVBAR MENU */
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 24px;
+}
+
+.menu li:hover,
+a:hover {
+    color: #ffffff;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.menu li {
+    padding: 5px 14px;
+}
+
+/* DROPDOWN MENU */
+.services {
+    position: relative;
+}
+
+.dropdown {
+    background-color: #1e272d;
+    padding: 1em 0;
+    position: absolute;
+    /*WITH RESPECT TO PARENT*/
+    display: none;
+    border-radius: 8px;
+    top: 35px;
+}
+
+.dropdown li+li {
+    margin-top: 10px;
+}
+
+.dropdown li {
+    padding: 0.5em 1em;
+    width: 8em;
+    text-align: center;
+}
+
+.dropdown li:hover {
+    color: #ffffff;
+}
+
+.services:hover .dropdown {
+    display: block;
+}
+
+/* PAGE CONTENT*/
+
+.headingbar {
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #556b2f;
+    color: #ffffff;
+}
+
+.headingbar h1 {
+    text-align: center;
+    font-family: Garamond;
+    font-size: 42px;
+}
+
+.main {
+    justify-content: space-between;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.main p {
+    text-align: center;
+    font-family: Georgia;
+    font-size: 18px;
+}
+
+.main h1 {
+    text-align: center;
+    font-family: Georgia;
+}
+
+.main h2 {
+    text-align: center;
+    font-family: Georgia;
+}
+
+.main p1 {
+    font-family: Georgia;
+    font-size: 20px;
+}
+
+.center {
+    display: block;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    border-radius: 20px 20px 20px 20px;
+}
+
+/* CONTACT US */
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+/* FOOTER */
+
+.footer {
+    padding: 15px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #1e272d;
+    color: white;
+}
+
+.footer p {
+    text-align: center;
+    font-family: Arial;
+}
+
+.footer h2 {
+    text-align: center;
+    font-family: Arial;
+    font-size: 18px;
+    color: white;
+}
+
+.footer a:link {
+    color: #556b2f;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  .footer a:visited {
+    color: #556b2f;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  .footer a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  .footer a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+.footer1 {
+    padding: 15px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #556b2f;
+    color: white;
+}
+
+.footer1 p {
+    text-align: center;
+    font-family: Arial;
+}
